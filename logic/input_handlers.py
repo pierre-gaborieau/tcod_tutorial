@@ -1,9 +1,8 @@
 from typing import Optional
 
 import tcod.event
-from tcod.event import T
 
-from actions import Action, EscapeAction, MovementAction
+from logic.actions import Action, MovementAction, EscapeAction
 
 
 class EventHandler(tcod.event.EventDispatch[Action]):
